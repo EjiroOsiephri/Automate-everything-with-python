@@ -1,4 +1,8 @@
 import sys
+import random
+
+print(random.randrange(1,50))
+
 print(sys.version)
 print('hello world')
 
@@ -13,7 +17,7 @@ c = True
 print(type(a))
 print(type(b))
 print(type(c))
-print(a + b)
+
 
 x = int(3)
 y = str(3)
@@ -35,3 +39,30 @@ fruits = ['apple', 'banana', 'cherry']
 x,y,z = fruits
 
 print(x,y,z)
+
+val = 'awesome'
+
+def myFunction():
+    global val
+    val = 'fantastic'
+    print('hello from a function' + val)
+
+myFunction()
+
+   
+print('hello from a function' + val)
+
+print(type(1j))
+
+data = 45
+
+print(complex(data))
+
+a = 'hello world'
+
+print(a[0])
+
+for x in "bananas":
+    print(x)
+
+print(len(a))
