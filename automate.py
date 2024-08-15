@@ -66,3 +66,52 @@ for x in "bananas":
     print(x)
 
 print(len(a))
+
+txt = 'The best things in life are free'
+
+if 'free' in txt:
+    print('yes, free is in the text')
+
+if 'expensive' not in txt:
+    print('yes, expensive is not in the text')
+
+print(txt[10:12])
+print(txt.upper())
+print(txt.lower())
+
+data = " i am a boy "
+print(data.strip())
+
+val = 'hello, world'
+print(val.replace('w', 'z'))
+print(val.split(','))
+
+price = 59
+txt = f'The price is {price} dollars'
+print(txt)
+
+x =9
+print(f"the value of x is {x:.2f}")
+print("we are the so called \"Vikings\" from the north")
+
+test = 'hello'
+print(test.encode())
+
+a = 200
+b =33
+
+if b > a:
+    print('B is greater than a')
+else:
+    print('A is greater than b')
+
+print(bool(a))
+
+tuple = ('Ejiro', 'dan', 'mike', 'idiot')
+print(type(tuple))
+
+print(len(tuple))
+
+x = ""
+print(5 > 3)
+print(isinstance(x, int))
