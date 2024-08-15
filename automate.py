@@ -13,6 +13,7 @@ c = True
 print(type(a))
 print(type(b))
 print(type(c))
+print(a + b)
 
 x = int(3)
 y = str(3)
