@@ -115,3 +115,51 @@ print(len(tuple))
 x = ""
 print(5 > 3)
 print(isinstance(x, int))
+
+listt = list(('ejiro', 'dan', 'mike', 'idiot'))
+print((listt[-4:-1]))
+
+thisList = ['apple', 'banana', 'cherry', 'mango']  
+thisList[0:2] = ['ejiro', 'dan']
+
+otherList = ['mike', 'idiot']
+
+thisList.insert(3, 'mike')
+
+thisList.append('idiot')
+thisList.extend(otherList)
+
+print(thisList)
+
+print(thisList.remove('idiot'))
+del thisList[0]
+
+thisList.pop(3)
+
+for x in thisList:
+    print(x)
+
+for i in range(len(thisList)):
+    print(i)
+
+i = 0
+while i < len(thisList):
+    print(thisList[i])
+    i+=1
+
+fruits = ['apple', 'banana', 'cherry', 'mango']
+newList = []
+
+for x in fruits:
+    if 'a' in x:
+        newList.append(x)
+        print(newList)
+    
+
+value = range(1,10)
+
+data = [x**2 for x in value if x > 3 ]
+print(data)
+
+print([x for x in fruits if x != 'banana'])
+print([x for x in range(10)])
