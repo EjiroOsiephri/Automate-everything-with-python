@@ -163,3 +163,58 @@ print(data)
 
 print([x for x in fruits if x != 'banana'])
 print([x for x in range(10)])
+
+fruitsList = ['mango', 'kiwi', 'mango', 'apple', 'cocunout']
+
+fruitsList.sort(reverse=True)
+
+fruitsList.reverse()
+
+newList = fruitsList.copy()
+newList = list(fruitsList)
+
+newList.extend(fruitsList)
+
+print(fruitsList[-1])
+
+list1 = ['e', 'b','c', 'd', 'e','f', 'g', 'h']
+list2 = [1,2,3,4,5,6,7]
+
+for x in list1:
+    list2.append(x)
+
+print(list2)
+
+
+newTuple2 = (1,4,6,8,9,12,0)
+newTuple = ('win', 'go', 'allow', 'ejiro', 'obus', 'ayo')
+
+y = list(newTuple)
+y[1] = 'dan'
+print(y)
+
+
+fruit = ('apple', 'banana', 'cherry', 'mango', 'raspberry', 'cocunut', 'peach')
+
+(one,two, *three ) = fruit
+
+
+print(three)
+
+
+thisSet = {"apple", "banana", "cherry", "mango"}
+
+anotherSet = {'tropical', 'data', 'allow', 'free', 'life'}
+
+tropical = {'data', 'vql', 'etc'}
+
+tropical.add('wahala, wahala')
+
+anotherSet.update(tropical)
+
+x = anotherSet.pop()
+
+for x in anotherSet:
+    print(x)
+
+print(x)
