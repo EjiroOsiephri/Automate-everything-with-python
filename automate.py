@@ -212,9 +212,76 @@ tropical.add('wahala, wahala')
 
 anotherSet.update(tropical)
 
+intersection = anotherSet.intersection(tropical)
+
+
 x = anotherSet.pop()
 
 for x in anotherSet:
     print(x)
 
 print(x)
+
+
+print(intersection)
+
+thisDict = {
+    "car": "ford",
+    "model": "mustang",
+    "year": 1964,
+    "color": ['red', 'blue', 'green'],
+    "price": 5000,
+    "price": 15000,
+}
+
+x = thisDict.get('model')
+y = thisDict.keys()
+
+thisDict['color'] = 'black'
+
+print(x, y)
+print(len(thisDict))
+
+print(type(thisDict))
+
+z = thisDict.items()
+print(z)
+
+if 'model'  in thisDict:
+    print('yes, model is one of the keys in thisDict')
+   
+thisDict['year'] = 2020
+
+thisDict.update({'price': 28000})
+
+thisDict.update({'buyer': 'ejiro'})
+
+print(thisDict)
+
+for x, y in thisDict.items():
+    print(x, y)
+
+myFamily = {
+    "rukky":{
+        "name": "rukky",
+        "year": 2010
+    },
+    "ejiro": {
+        "name": "ejiro",
+        "year": 2005
+    },
+    "obus" :{
+        "name": "obus",
+        "year": 2003
+    },
+    "esiri":{
+        "name": "esiri",
+        "year": 2012
+    }
+}
+
+for x in myFamily:
+    print(myFamily[x])
+
+for x, obj in myFamily.items():
+    print(x, obj)
