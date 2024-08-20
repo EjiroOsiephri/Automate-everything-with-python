@@ -287,10 +287,52 @@ for x, obj in myFamily.items():
     print(x, obj)
 
 
-a = 33
+a = 200
 b = 33
-
+c =40
 if b > a:
     print('b is greater than a')
 elif a == b:
     print('a and b are equal')
+else:
+    print('a is greater than b')
+
+if a > b and c > a:
+    print('both conditions are true')
+else:
+    print('one or both conditions are false')
+
+i = 1
+
+while i < 6:
+    print(i)
+    if i == 3:
+        break
+    i+=1  
+
+def my_function(a,b):
+   return a * b
+
+print(my_function(3,4))
+
+def my_function(*kids):
+    print(kids)
+    print('the youngest child is ' + kids[2])
+
+my_function('emeka', 'ejiro', 'dan')
+
+def my_function(**kid):
+    print(kid)
+    print('his last name is ' + kid['lname'])  
+
+my_function(fname = 'ejiro', lname = 'obus')
+
+def tri_recursion(k):
+    if k > 0:
+        result = k + tri_recursion(k-1)
+        print(result)
+    else:
+        result = 0
+    return result
+
+tri_recursion(6)
