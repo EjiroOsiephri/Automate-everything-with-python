@@ -1,6 +1,6 @@
 import sys
 import random
-import mymodule
+import mymodule as mx
 
 print(random.randrange(1,50))
 
@@ -449,6 +449,18 @@ def myFunction():
 myFunction()
 print(x)
 
-module = mymodule.CallClassName('ejiro')
+module = mx.CallClassName('ejiro')
 
 print(module.myFunc())
+
+import platform
+
+x = platform.system()
+y = dir(platform)
+
+print(y)
+print(x)
+
+import datetime
+
+print(datetime.datetime.now())
