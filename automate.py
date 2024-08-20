@@ -463,4 +463,11 @@ print(x)
 
 import datetime
 
-print(datetime.datetime.now())
+x =datetime.datetime.now()
+
+print(x.year)
+print(x.strftime('%A'))
+
+y = datetime.datetime(2003,11, 22)
+
+print(y.strftime('%A'))
