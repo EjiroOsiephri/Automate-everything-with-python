@@ -1,5 +1,6 @@
 import sys
 import random
+import mymodule
 
 print(random.randrange(1,50))
 
@@ -336,3 +337,118 @@ def tri_recursion(k):
     return result
 
 tri_recursion(6)
+
+def myFunction(n):
+    return lambda a: a * n
+
+myDoubler = myFunction(2)
+
+print(myDoubler(3))
+
+class MyClass:
+    x = 5
+
+p1 = MyClass()
+
+print(p1.x)
+
+class Person:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+
+    def __str__(self):
+        return f'{self.name} is {self.age} years old'
+
+p1 = Person('ejiro', 36)
+
+print(p1)
+
+class Person:
+    def __init__(self, name,age):
+     self.name = name
+     self.age = age
+
+    def myfunc(self):
+        print(f'hello my name is {self.name}  and i am {self.age } years old') 
+
+p2 = Person('ejiro', 36)
+p2.myfunc()
+
+class Student:
+    def __init__(self, fname, lname):
+        self.firstName = fname
+        self.lastName = lname
+    
+    def myFunction(self):
+        print(self.firstName ,self.lastName)
+
+p1 = Student('ejiro', 'osiephri')
+
+p1.myFunction()
+
+class anotherStudent(Student):
+    pass
+
+x = anotherStudent('rukevwe', 'osiephri')
+
+x.myFunction()
+
+tuple = ('ejiro', 'dan', 'mike', 'idiot')
+
+myIt = iter(tuple)
+
+print(next(myIt))
+print(next(myIt))
+print(next(myIt))
+
+class myNumbers:
+    def __iter__(self):
+        self.a = 1
+        return self
+    
+    def __next__(self):
+        x = self.a
+        self.a += 1
+        return x
+    
+myIter = (iter(myNumbers()))
+
+class   Vehicle:
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+    
+    def move(self):
+        print('the vehicle is moving')
+
+class Car(Vehicle):
+    def move(self):
+        print('the car is moving')
+
+class Plane(Vehicle):
+    def move(self):
+        print('the plane is moving')
+
+vehicle = Vehicle('Ford', 'Mustang', 2024)  
+car =   Car('Toyota', 'Camry', 2020)
+plane = Plane('Boeing', '747', 2020)
+
+vehicle.move()
+car.move()
+plane.move()
+
+for x in (vehicle, car, plane):
+    print(x.make)
+
+x = 300
+def myFunction():
+    x = 200
+    
+myFunction()
+print(x)
+
+module = mymodule.CallClassName('ejiro')
+
+print(module.myFunc())
