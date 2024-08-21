@@ -23,10 +23,7 @@ class calcValues:
     
 x = input('Enter first number: ')
 y= input('Enter second number: ')
-    
 calculator = calcValues(x,y)
-
-print(calculator)
 print(f'The sum of {x} and {y} is {calculator.add()}')
 print(f'The difference between {x} and {y} is {calculator.subtract()}')
 print(f'The product of {x} and {y} is {calculator.multiply()}')
