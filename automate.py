@@ -463,11 +463,46 @@ print(x)
 
 import datetime
 
-x =datetime.datetime.now()
+x = datetime.datetime.now()
 
 print(x.year)
 print(x.strftime('%A'))
 
-y = datetime.datetime(2003,11, 22)
+y = datetime.datetime(3000,6, 7)
 
 print(y.strftime('%A'))
+
+import math
+
+y = math.ceil(1.4)
+x = math.floor(1.4)
+
+print(x, y)
+
+import json
+
+x ={
+    "name": "ejiro",
+    "age": 36,
+    "city": "lagos"
+}
+
+y = json.dumps(x)
+
+print(y)
+
+import re
+
+txt = 'the rain in spain'
+
+x= re.findall('ai', txt)
+print(x)
+
+y = re.search('\s', txt)
+
+print(y.start())
+
+import camelcase
+
+c = camelcase.CamelCase()
+
